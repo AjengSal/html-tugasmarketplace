@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+      /* Header Blibli */
+      .header-blibli {
+      background-color: #0082ca;
+      padding: 15px 30px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+    .logo-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 50px;
+        height: auto;
+    }
+
+    .header-blibli h1 {
+        margin: 0;
+        font-size: 50px;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .search-bar input {
+        width: 300px;
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .search-bar button {
+        padding: 9px 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .search-bar button:hover {
+        background-color: #0056b3;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .masuk, .daftar {
+        background-color: white;
+        color: #0082ca;
+        padding: 6px 16px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .masuk:hover, .daftar:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Shopee Content */
+    .shopee-section {
+      background: #ee4d2d;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .shopee-title {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .shopee-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+    }
+
+    .shopee-item {
+      text-align: center;
+      background-color: #fafafa;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      transition: 0.3s;
+    }
+
+    .shopee-item:hover {
+      background-color: #ffece7;
+      border-color: #ee4d2d;
+    }
+
+    .shopee-item img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .shopee-item span {
+      display: block;
+      color: #333;
+      font-size: 14px;
+    }
+
+    /* Footer Bukalapak */
+    .footer-bukalapak {
+      background-color: #fff;
+      padding: 30px;
+      color: #555;
+      border-top: 1px solid #ddd;
+    }
+
+    .footer-bukalapak strong {
+      color: #333;
+    }
+
+    .footer-bukalapak .description {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .footer-bukalapak .about-section h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .footer-bukalapak .about-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-bukalapak .about-section li {
+      margin-bottom: 8px;
+    }
+
+    .footer-bukalapak .about-section a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-bukalapak .about-section a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER BLIBLI -->
+  <div class="header-blibli">
+    <img src="bli.png" alt="bli" class="bli">
+    <h1 class="title">Blibli</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Cari produk...">
+      <button>Cari</button>
+    </div>
+    <div class="buttons">
+        <button class="masuk">Masuk</button>
+        <button class="daftar">Daftar</button>
+      </div>
+  </div>
+
+  <!-- CONTENT SHOPEE -->
+  <div class="shopee-section">
+    <div class="shopee-title">
+        <h1 class="title">Kategori produk</h1>
+    </div>
+    <div class="shopee-grid">
+      <div class="shopee-item">
+        <img src="handphone.png" alt="Handphone">
+        <span>Handphone</span>
+      </div>
+      <div class="shopee-item">
+        <img src="responsive.png" alt="Elektronik">
+        <span>Elektronik</span>
+      </div>
+      <div class="shopee-item">
+        <img src="polo.png" alt="Fashion Pria">
+        <span>Fashion Pria</span>
+      </div>
+      <div class="shopee-item">
+        <img src="images.png" alt="Fashion Wanita">
+        <span>Fashion Wanita</span>
+      </div>
+      <div class="shopee-item">
+        <img src="football.png" alt="Olahraga">
+        <span>Olahraga</span>
+      </div>
+      <div class="shopee-item">
+        <img src="chef.png" alt="Peralatan Dapur">
+        <span>Peralatan Dapur</span>
+      </div>
+      <div class="shopee-item">
+        <img src="medical.png" alt="Kesehatan">
+        <span>Kesehatan</span>
+      </div>
+      <div class="shopee-item">
+        <img src="helmet.png" alt="Otomotif">
+        <span>Otomotif</span>
+      </div>
+      <div class="shopee-item">
+        <img src="muslim.jpeg" alt="Fashion muslim">
+        <span>Fashion Muslim</span>
+      </div>
+      <div class="shopee-item">
+        <img src="sepatu pria.jpg" alt="Sepatu Pria">
+        <span>Sepatu Pria</span>
+      </div>
+      <div class="shopee-item">
+        <img src="sepatu wanita.png" alt="sepatu wanita">
+        <span>Sepatu Wanita</span>
+      </div>
+      <div class="shopee-item">
+        <img src="aksesoris.png" alt="aksesoris">
+        <span>Aksesoris</span>
+      </div>
+      <div class="shopee-item">
+        <img src="makanan.jpeg" alt="Makanan & Minuman">
+        <span>Makanan & Minuman</span>
+      </div>
+      <div class="shopee-item">
+        <img src="skincare.png" alt="Perawatan Kecantikan">
+        <span>Perawatan Kecantikan</span>
+      </div>
+      <div class="shopee-item">
+        <img src="bayi dan anak.png" alt="Fashion Bayi & Anak">
+        <span>Fashion Bayi & Anak</span>
+      </div>
+      <div class="shopee-item">
+        <img src="tas.png" alt="Tas Pria & Wanita">
+        <span>Tas Pria & Wanita</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER BUKALAPAK -->
+  <div class="footer-bukalapak">
+    <div class="deskripsi>
+      <strong>Bukalapak – Solusi Digital untuk Kebutuhan Sehari-hari</strong><br><br>
+      Bukalapak kini hadir sebagai platform digital untuk memenuhi berbagai kebutuhan transaksi online Anda.
+      Bukalapak menyediakan metode <strong>pembayaran yang praktis</strong> dan beragam, serta
+      <strong>harga kompetitif</strong> dengan berbagai promo menarik.
+    </div>
+
+    <div class="about-section">
+      <h3>Tentang Kami</h3>
+      <ul>
+        <li><a href="#">Tentang Bukalapak</a></li>
+        <li><a href="#">Informasi Saham Bukalapak</a></li>
+        <li><a href="#">Aturan Penggunaan</a></li>
+        <li><a href="#">Kebijakan Privasi</a></li>
+        <li><a href="#">Karir di Bukalapak</a></li>
+        <li><a href="#">Vulnerability Reports</a></li>
+        <li><a href="#">Download Aplikasinya</a></li>
+        <img src="Icons-App-Store-Google-play.webp" width="100px" height="100px" alt="playstrore & appstore">
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
